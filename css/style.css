@@ -1,0 +1,40 @@
+.content{
+    width: 280px;
+    height: 215px;
+}
+.box{    
+    background-image: url('../img/1.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+.overlay{
+    background-color: rgba(0,0,0,0.2);
+    position: absolute;
+    top: -215px;
+    left: 0;
+   transition-property: all;
+   transition-duration: 0.4s;
+   transition-timing-function: ease-in-out;
+}
+.box:hover .overlay{
+    top: 0px;
+}
+.overlay > a{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 50px;
+    text-align: center;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    color:#464646;
+}
+.icon{
+    left: 150px !important;
+}
